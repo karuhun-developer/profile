@@ -1,0 +1,21 @@
+---
+interface Props {
+	siteName?: string;
+    description?: string;
+
+}
+
+const { siteName, description } = Astro.props;
+---
+<meta content="Karuhun Developer" name="author">
+<meta property="og:site_name" content={siteName ?? 'Karuhun Developer'}>
+<meta property="og:title" content={siteName ?? 'Karuhun Developer'}>
+<meta property="og:type" content="website">
+<meta property="og:url" content={Astro.url}>
+<meta property="og:image" itemprop="image" content="/images/logo.png">
+<meta property="og:description"
+    content={description ?? "Karuhun Developer adalah software house berpengalaman yang menawarkan solusi pengembangan perangkat lunak handal untuk memenuhi kebutuhan bisnis Anda. Dengan tim ahli dan berpengalaman, kami siap membantu Anda menghadirkan teknologi terbaik."}>
+<meta name="description"
+    content={description ?? "Karuhun Developer adalah software house berpengalaman yang menawarkan solusi pengembangan perangkat lunak handal untuk memenuhi kebutuhan bisnis Anda. Dengan tim ahli dan berpengalaman, kami siap membantu Anda menghadirkan teknologi terbaik."}>
+<meta name="keywords"
+    content="Karuhun Developer, software house, pengembangan perangkat lunak, solusi teknologi, perusahaan IT, aplikasi mobile, pengembangan web, IT consulting, layanan IT, teknologi berpengalaman, jasa pembuatan aplikasi, jasa pembuatan website, sistem informasi, aplikasi bisnis, teknologi custom, layanan digital, transformasi digital, teknologi informasi, pengembang software, developer aplikasi, solusi IT, pengembangan aplikasi, platform digital, IT outsourcing, solusi bisnis, pengembangan sistem, teknologi terkini, inovasi digital, konsultan IT, tim berpengalaman, proyek software, karuhun, developer, dev, erp, toko online, online store, website, web, web design, web development, web application, application, aplikasi">
