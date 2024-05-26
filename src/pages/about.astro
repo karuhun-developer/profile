@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import OurClient from '../components/OurClient.astro';
 ---
 
 <Layout title="About Us">
@@ -49,6 +51,31 @@ import Layout from '../layouts/Layout.astro';
     </section>
     <!-- /about us -->
 
+    <!-- our vision -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section-title">Our Vision</h2>
+                    <p>
+                        Visi kami adalah menjadi mitra terpercaya dalam perjalanan transformasi digital Anda.  
+                        Kami percaya bahwa dengan kombinasi pengalaman mendalam dan pendekatan inovatif, 
+                        kami dapat membantu bisnis Anda tumbuh dan beradaptasi dengan perkembangan teknologi terkini.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p>
+                        Misi kami adalah menyediakan layanan pengembangan perangkat lunak berkualitas tinggi 
+                        yang dapat diandalkan oleh berbagai jenis bisnis. Kami berkomitmen untuk memahami 
+                        kebutuhan spesifik klien kami dan memberikan solusi yang tepat waktu, efisien, dan sesuai anggaran.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /our vision -->
+
     <!-- product -->
     <section class="section product" style="background-image: url(images/backgrounds/about-bg.png);">
         <div class="container">
@@ -58,16 +85,39 @@ import Layout from '../layouts/Layout.astro';
                     <p class="mb-100">We Provide Best Product For Your Business.</p>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-50">
-                    <a href="#"><img src="images/product/product-1.jpg" alt="product-img"
-                            class="rounded w-100 img-fluid"></a>
+                    <a href="#" class="text-center text-dark">
+                        <Image 
+                            src="https://i.ibb.co.com/NYcXVXb/homescreen.png" 
+                            alt="IPTV Platform" 
+                            class="rounded w-100 img-fluid" 
+                            width={50} 
+                            height={50} />
+                            IPTV Platform
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-50">
-                    <a href="#"><img src="images/product/product-2.jpg" alt="product-img"
-                            class="rounded w-100 img-fluid"></a>
+                    <a href="https://sikelimkemkes.id/welcome" class="text-center text-dark" target="_blank">
+                        <Image 
+                            src="https://i.ibb.co/PZGDqVz/sikelim.png"
+                            alt="Sistem Kelola Limbah Medis"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Sistem Kelola Limbah Medis
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-50">
-                    <a href="#"><img src="images/product/product-3.jpg" alt="product-img"
-                            class="rounded w-100 img-fluid"></a>
+                    <a href="https://taxie.id/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co/gWpsJ8w/taxie-id.png"
+                            alt="Taxie ID"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Taxie.id
+                    </a>
                 </div>
                 <div class="col-12 text-center">
                     <a href="/portfolio" class="btn btn-primary">Explore More Product</a>
@@ -75,67 +125,8 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
 
-        <!-- our vision -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="section-title">Our Vision</h2>
-                        <p>
-                            Visi kami adalah menjadi mitra terpercaya dalam perjalanan transformasi digital Anda.  
-                            Kami percaya bahwa dengan kombinasi pengalaman mendalam dan pendekatan inovatif, 
-                            kami dapat membantu bisnis Anda tumbuh dan beradaptasi dengan perkembangan teknologi terkini.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="section-title">Our Mission</h2>
-                        <p>
-                            Misi kami adalah menyediakan layanan pengembangan perangkat lunak berkualitas tinggi 
-                            yang dapat diandalkan oleh berbagai jenis bisnis. Kami berkomitmen untuk memahami 
-                            kebutuhan spesifik klien kami dan memberikan solusi yang tepat waktu, efisien, dan sesuai anggaran.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /our vision -->
-
         <!-- clients -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-title">Our Clients</h2>
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item mx-5 mb-5"><a href="#"><img
-                                        src="images/clients-logo/client-1.png" alt="clients-logo" class="img-fluid"></a>
-                            </li>
-                            <li class="list-inline-item mx-5 mb-5"><a href="#"><img
-                                        src="images/clients-logo/client-2.png" alt="clients-logo" class="img-fluid"></a>
-                            </li>
-                            <li class="list-inline-item mx-5 mb-5"><a href="#"><img
-                                        src="images/clients-logo/client-3.png" alt="clients-logo" class="img-fluid"></a>
-                            </li>
-                            <li class="list-inline-item mx-5 mb-5"><a href="#"><img
-                                        src="images/clients-logo/client-4.png" alt="clients-logo" class="img-fluid"></a>
-                            </li>
-                            <li class="list-inline-item mx-5 mb-5"><a href="#"><img
-                                        src="images/clients-logo/client-5.png" alt="clients-logo" class="img-fluid"></a>
-                            </li>
-                            <li class="list-inline-item mx-5 mb-5"><a href="#"><img
-                                        src="images/clients-logo/client-6.png" alt="clients-logo"
-                                        class="img-fluid"></a></li>
-                            <li class="list-inline-item mx-5 mb-5"><a href="#"><img
-                                        src="images/clients-logo/client-7.png" alt="clients-logo"
-                                        class="img-fluid"></a></li>
-                            <li class="list-inline-item mx-5 mb-5"><a href="#"><img
-                                        src="images/clients-logo/client-8.png" alt="clients-logo"
-                                        class="img-fluid"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <OurClient />
         <!-- /clients -->
     </section>
     <!-- /product -->

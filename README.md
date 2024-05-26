@@ -1,3 +1,3 @@
 # HEHE
 
-[![Website]](https://www.karuhun.dev/)
+[Website](https://www.karuhun.dev/)

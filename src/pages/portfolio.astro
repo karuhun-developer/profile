@@ -1,6 +1,151 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import OurClient from '../components/OurClient.astro';
 ---
 
 <Layout title="Portfolio">
+    <!-- product -->
+    <section class="section product" style="background-image: url(images/backgrounds/about-bg.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="#" class="text-center text-dark">
+                        <Image 
+                            src="https://i.ibb.co.com/NYcXVXb/homescreen.png" 
+                            alt="IPTV Platform" 
+                            class="rounded w-100 img-fluid" 
+                            width={50} 
+                            height={50} />
+                            IPTV Platform
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://sikelimkemkes.id/welcome" class="text-center text-dark" target="_blank">
+                        <Image 
+                            src="https://i.ibb.co/PZGDqVz/sikelim.png"
+                            alt="Sistem Kelola Limbah Medis"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Sistem Kelola Limbah Medis
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://taxie.id/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co/gWpsJ8w/taxie-id.png"
+                            alt="Taxie ID"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Taxie.id
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://adaptasiklhk.id/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co/XXy34Yd/adaptasiklhk.png"
+                            alt="Portal Jendela Adaptasi Perubahan Iklim"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Portal Jendela Adaptasi Perubahan Iklim
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://kalimantanforest.org/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co.com/r6SWnjn/kalfor.png"
+                            alt="Website Kalimantan Forest"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Website Kalimantan Forest
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://elearning.bkpm.go.id/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co/wdngyL2/bkpm.png"
+                            alt="Elearning BKPM (Offline)"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Elearning BKPM (Offline)
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://kemenkes.id/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co/hggQHtK/Kemenkes.png"
+                            alt="Website Kemenkes"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Website Kemenkes
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://indolancer.id/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co/ftcFHDr/indolancer.png"
+                            alt="indolancer Id"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        indolancer Id
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://www.instagram.com/buff.ina/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co/VvthStr/buff-fun-run-2023.png"
+                            alt="Buff Fun Run 2023"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Buff Fun Run 2023
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://kisekispace.com/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co/64zjbGV/Kiseki-Space.png"
+                            alt="Kiseki Space"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Kiseki Space
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-50">
+                    <a href="https://multicoop.id/" class="text-center text-dark">
+                        <Image
+                            src="https://i.ibb.co.com/9489JZn/multicoop.png"
+                            alt="Aplikasi Koperasi Multicoop.id"
+                            class="rounded w-100 img-fluid"
+                            width={50}
+                            height={50}
+                        />
+                        Aplikasi Koperasi Multicoop.id
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- clients -->
+        <OurClient />
+        <!-- /clients -->
+    </section>
+    <!-- /product -->
 </Layout>
