@@ -77,7 +77,8 @@ const { title, description } = Astro.props;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.1.8/venobox.min.js" integrity="sha512-LvcjoBF1sjBfiAJpi1Vt5pJXcT7A+0BK6nvwYkp0PwL3zNswVsRi3GURZXlRN8o6E9p0pJUJi5vsp6LSqVBzhw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
-	<script src="/script.js" is:inline></script>
+    <script src="/script.js" is:inline></script>
+    <slot name="scripts"></slot>
 </body>
 
 </html>
