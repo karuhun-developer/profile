@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://karuhun.dev/',
+    site: 'https://karuhundeveloper.com/',
     output: 'static',
     adapter: vercelStatic(),
     integrations: [
